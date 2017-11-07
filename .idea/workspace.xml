@@ -24,9 +24,11 @@
       <file leaf-file-name="insert_note.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DBControl/insert_note.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="285">
+              <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+              <folding>
+                <marker date="1510063607858" expanded="true" signature="222:270" ph="insert into note_board... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,12 +134,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1510059510748</updated>
-      <workItem from="1510059512863" duration="1399000" />
+      <workItem from="1510059512863" duration="2658000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1399000" />
+    <option name="totallyTimeSpent" value="2658000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="435" y="81" width="1400" height="958" extended-state="0" />
@@ -191,9 +193,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DBControl/insert_note.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="285">
+          <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+          <folding>
+            <marker date="1510063607858" expanded="true" signature="222:270" ph="insert into note_board... " />
+          </folding>
         </state>
       </provider>
     </entry>
