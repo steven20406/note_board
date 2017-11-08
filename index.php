@@ -21,7 +21,7 @@
     echo  "<td>Delete";
     echo  "</th>";
     
-    while($row=mysql_fetch_field($result)){
+    while($row=mysql_fetch_row($result)){
         echo "<tr>";
         echo "<td>$row->user_name";
         echo "<td>$row->user_note";
