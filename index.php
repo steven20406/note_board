@@ -12,26 +12,25 @@
 <?php
     include_once("DBControl/dbtool.inc.php");
     $link=create_connection();
-    $quert="select * from note_board";
-    $note_data = execute_query($link,"test", $query);
+    $query="select * from note_board";
+    $result = execute_query($link,"test", $query);
     
     echo "<table border=1>";
-    echo "<th><td>User Name";
+    echo "<tr><td>User Name";
     echo  "<td>User Note";
     echo  "<td>Delete";
-    echo  "</th>";
-    
-    while($row=mysql_fetch_row($result)){
-        echo "<tr>";
-        echo "<td>$row->user_name";
-        echo "<td>$row->user_note";
-        echo "<td><submit type="button" name="delete" method="post" action="DBControl/" value="$row->user_note">Delete</button>"
-        echo "</tr>";
+
+    while($row=mysqli_fetch_row($result)){
+            echo "<tr>";
+            echo "<td>$row[0]";
+            echo "<td>$row[1]";
+            echo "<td><a href='DBControl/delete_note.php?text=".$row[1]."'> Delete</a>";
+            echo "</tr>";
     }
     
     echo "</table>";
     
-    mysql_close($link);
+//    mysql_close($link);
 ?>
 
 <div id="text_area"></div>
@@ -43,21 +42,21 @@
 </form>
 
 <script>
-    $("#note_submit").click(function (){
-        var user_name=$("#user_name").val();
-        var user_note=$("#user_note").val();
-        $.ajax({
-            url:"DBControl/insert_note.php",
-            type:"post",
-            datatype:"json",
-            data:{
-                user_name : user_name,
-                user_note : user_note
-            },
-            success : function(resp){
-            }
-        });
-    });
+//    $("#note_submit").click(function (){
+//        var user_name=$("#user_name").val();
+//        var user_note=$("#user_note").val();
+//        $.ajax({
+//            url:"DBControl/insert_note.php",
+//            type:"post",
+//            datatype:"json",
+//            data:{
+//                user_name : user_name,
+//                user_note : user_note
+//            },
+//            success : function(resp){
+//            }
+//        });
+//    });
 </script>
 
 </body>

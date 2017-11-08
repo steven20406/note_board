@@ -15,5 +15,5 @@ $note = $_POST["user_note"];
 $query="insert into note_board values ('$name', '$note')";
 $result = execute_query($link,"test", $query);
 
-header("Location: http://localhost/note_board/index.php"); /* Redirect browser */
+header("Location: http://localhost/note_board/index.php");
 exit();

@@ -1,7 +1,8 @@
 <?php
-
+$text=$_GET["text"];
 include_once ("dbtool.inc.php");
 $link=create_connection();
-$delete_note = $_POST["delete"];
-$query="delete from user_note where user_note = $delete_note";
-$result=execute_query($link,"note_board",$query);
+$query="delete from note_board where user_note = '$text'";
+$result=execute_query($link,"test",$query);
+header("Location: http://localhost/note_board/index.php"); /* Redirect browser */
+exit();
