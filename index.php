@@ -9,6 +9,30 @@
     <title>Index</title>
 </head>
 <body>
+<?php
+    include_once("DBControl/dbtool.inc.php");
+    $link=create_connection();
+    $quert="select * from note_board";
+    $note_data = execute_query($link,"test", $query);
+    
+    echo "<table border=1>";
+    echo "<th><td>User Name";
+    echo  "<td>User Note";
+    echo  "<td>Delete";
+    echo  "</th>";
+    
+    while($row=mysql_fetch_field($result)){
+        echo "<tr>";
+        echo "<td>$row->user_name";
+        echo "<td>$row->user_note";
+        echo "<td><button name="delete" method="delete" action="DBControl/" value="$row->user_name">Delete</button>"
+        echo "</tr>";
+    }
+    
+    echo "</table>";
+    
+    mysql_close($link);
+?>
 
 <div id="text_area"></div>
 
@@ -19,9 +43,9 @@
 </form>
 
 <script>
-    $("#note_submit").click(){
-
-    }
+    $("#note_submit").click(function (){
+    
+    });
 </script>
 
 </body>
