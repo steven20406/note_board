@@ -44,7 +44,19 @@
 
 <script>
     $("#note_submit").click(function (){
-    
+        var user_name=$("#user_name").val();
+        var user_note=$("#user_note").val();
+        $.ajax({
+            url:"DBControl/insert_note.php",
+            type:"post",
+            datatype:"json",
+            data:{
+                user_name : user_name,
+                user_note : user_note
+            },
+            success : function(resp){
+            }
+        });
     });
 </script>
 
