@@ -25,7 +25,7 @@
         echo "<tr>";
         echo "<td>$row->user_name";
         echo "<td>$row->user_note";
-        echo "<td><button name="delete" method="delete" action="DBControl/" value="$row->user_name">Delete</button>"
+        echo "<td><submit type="button" name="delete" method="post" action="DBControl/" value="$row->user_name">Delete</button>"
         echo "</tr>";
     }
     
